@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Maker</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    
+    <div class="color-options">
+        <input type="color" id="color" />
+        <div class="color-option" style="background-color : #3498db;" data-color="#3498db"></div>
+        <div class="color-option" style="background-color : #9b59b6;" data-color="#9b59b6"></div>
+        <div class="color-option" style="background-color : #34495e;" data-color="#34495e"></div>
+        <div class="color-option" style="background-color : #16a085;" data-color="#16a085"></div>
+        <div class="color-option" style="background-color : #2980b9;" data-color="#2980b9"></div>
+        <div class="color-option" style="background-color : #8e44ad;" data-color="#8e44ad"></div>
+        <div class="color-option" style="background-color : #2c3e50;" data-color="#2c3e50"></div>
+        <div class="color-option" style="background-color : #f1c40f;" data-color="#f1c40f"></div>
+        <div class="color-option" style="background-color : #e67e22;" data-color="#e67e22"></div>
+        <div class="color-option" style="background-color : #ecf0f1;" data-color="#ecf0f1"></div>
+        <div class="color-option" style="background-color : #7f8c8d;" data-color="#7f8c8d"></div>
+    </div>
+    <canvas id="js-canvas"></canvas>
+    <div class="btns">
+        <span>Pencil weight</span>
+        <input id="line-width"  type="range" min="1" max="10" value="5" step="0.5" />
+        <button id="mode-btn" >💗 Fill</button>
+        <button id="drawnfill-btn">➰ Draw&Fill OFF</button>
+        <button id="square-btn">🟥 Square</button>
+        <button id="circle-btn">🔴 Circle</button>
+        <button id="destroy-btn">💣 Destroy</button>
+        <button id="erase-btn">❌ Erase</button>
+        <label for="file">
+           ➕ Add Photo
+            <input type="file" accept="image/*" id="file"  />
+        </label>
+        <span class="font-options">
+            <select style="width:100px;" id="font-style">
+                <option>normal</option>
+                <option>italic</option>
+                <option>bold</option>
+            </select>
+            <input type="number" id="font-size" step="1" value="48" style="width:40px;" > px
+            <select style="width:200px;" id="font-name">
+                <option value="Arial">Arial</option>
+                <option value="lnk-Free">lnk Free</option>
+                <option value="Impact">Impact</option>
+                <option value="La-Belle-Aurore">La Belle Aurore</option>
+            </select>
+            <input type="radio" name="font-type" value="stroke" checked>Stroke
+            <input type="radio" name="font-type" value="fill">Fill
+        </span>
+        <input type="text" placeholder="Write and then double click" id="text"/>
+        <button id="save">🎨 Save image</button>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
